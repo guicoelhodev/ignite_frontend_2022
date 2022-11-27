@@ -10,10 +10,10 @@ import {
 
 export const ListContext = createContext<{} | IContextProps>({});
 
-type ITask = {
+export type ITask = {
   id: string;
   description: string;
-  status: "done" | "in progress";
+  completed: boolean;
 };
 
 interface IProvider {
