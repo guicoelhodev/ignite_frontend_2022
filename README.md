@@ -21,10 +21,10 @@
   <br />
 
   <ul>
-    <li>[ ] Add a new task</li>  
-    <li>[ ] Marking and Unmarking a Task Completed</li>  
-    <li>[ ] Remove a task from the list</li>  
-    <li>[ ] Show task completion progress</li>  
+    <li>[x] Add a new task</li>  
+    <li>[x] Marking and Unmarking a Task Completed</li>  
+    <li>[x] Remove a task from the list</li>  
+    <li>[x] Show task completion progress</li>  
   </ul>
 
 </div>
