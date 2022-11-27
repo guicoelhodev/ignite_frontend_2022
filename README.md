@@ -6,6 +6,14 @@
 </div>
 
 <div>
+  <h2>See all projects deployed here 😁</h2>
+  <br/>
+
+<a target="_blank" href="https://ignite-frontend-2022-challenger01.vercel.app/">Challenger 01 - Todo List</a>
+
+</div>
+
+<div>
 
   <h2>Create a to do app</h2>
   <h3>Challenger 01</h3>
