@@ -1,9 +1,17 @@
-import React from "react";
+import React, { ReactNode } from "react";
+import { defaultStyleTheme } from "../../../styles/default";
+import * as S from "./style";
 
-// import { Container } from './styles';
+interface IButtonProps {
+  bg?: keyof typeof defaultStyleTheme;
+  color?: keyof typeof defaultStyleTheme;
+  children: ReactNode;
+}
 
-const Button: React.FC = () => {
-  return <div />;
+export const Button: React.FC<IButtonProps> = ({ bg, children, color }) => {
+  return (
+    <S.Container bg={bg} color={color}>
+      {children}
+    </S.Container>
+  );
 };
-
-export default Button;
