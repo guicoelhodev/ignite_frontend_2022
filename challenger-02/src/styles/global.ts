@@ -37,6 +37,11 @@ li {
 
 button {
   cursor: pointer;
+  font-size: 1rem;
+
+  :hover {
+    filter: brightness(0.95);
+  }
 }
 
 :is(h1, h2){
