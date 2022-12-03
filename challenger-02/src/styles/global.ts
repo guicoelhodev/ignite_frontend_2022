@@ -11,13 +11,12 @@ export const GlobalStyle = createGlobalStyle`
 html, body {
 
   background-color: ${(props) => props.theme.background};
-  width:100%;
-  min-height: 100vh;
-  height:100%;
+
 };
 
 h1 {
   color: ${(props) => props.theme["base-title"]};
+  //font-family: 'Baloo 2', cursive;
 }
 
 h2 {
@@ -38,5 +37,13 @@ li {
 
 button {
   cursor: pointer;
+}
+
+:is(h1, h2){
+  font-family: 'Baloo 2', cursive;
+};
+
+:is(p, label, span){
+  font-family: 'Roboto', sans-serif;
 }
 `;

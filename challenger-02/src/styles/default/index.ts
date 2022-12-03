@@ -19,4 +19,7 @@ export const defaultStyleTheme = {
 
   background: "#fafafa",
   white: "#ffffff",
+
+  "font-baloo": "Baloo 2",
+  "font-roboto": "Roboto",
 } as const;
