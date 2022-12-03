@@ -9,4 +9,7 @@ export const Container = styled.div`
   border: 1px solid red;
 
   background-color: inherit;
+
+  display: flex;
+  flex-direction: column;
 `;
