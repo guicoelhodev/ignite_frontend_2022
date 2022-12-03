@@ -39,12 +39,12 @@
   <br />
 
   <ul>
-    <li>[] List of products (coffees) available for purchase</li>  
-    <li>[] Add a specific quantity of items to the cart</li>  
-    <li>[] Increase or remove the quantity of items in the cart</li>  
-    <li>[] Form for the user to fill in his address</li> 
-    <li>[] Display total items in cart in Header</li>
-    <li>[] Display the sum total amount of items in the cart multiplied by the amount</li>
+    <li>[ ] List of products (coffees) available for purchase</li>  
+    <li>[ ] Add a specific quantity of items to the cart</li>  
+    <li>[ ] Increase or remove the quantity of items in the cart</li>  
+    <li>[ ] Form for the user to fill in his address</li> 
+    <li>[ ] Display total items in cart in Header</li>
+    <li>[ ] Display the sum total amount of items in the cart multiplied by the amount</li>
   </ul>
 
 </div>
