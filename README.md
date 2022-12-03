@@ -10,6 +10,7 @@
   <br/>
 
 <a target="_blank" href="https://ignite-frontend-2022-challenger01.vercel.app/">Challenger 01 - Todo List</a>
+<br/>
 <a target="_blank" href="https://ignite-frontend-2022-challenger-02.vercel.app/">Challenger 02 - Coffe Shop</a>
 
 </div>
