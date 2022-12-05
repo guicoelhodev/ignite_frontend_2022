@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { Layout } from "../components/UI/Layout";
+import { CoffeeProvider } from "../context/coffeeContext";
 import { Routes } from "../routes";
 import { defaultStyleTheme } from "../styles/default";
 import { GlobalStyle } from "../styles/global";
@@ -10,7 +11,9 @@ export const App: React.FC = () => {
     <>
       <ThemeProvider theme={defaultStyleTheme}>
         <GlobalStyle />
-        <Routes />
+        <CoffeeProvider>
+          <Routes />
+        </CoffeeProvider>
       </ThemeProvider>
     </>
   );
