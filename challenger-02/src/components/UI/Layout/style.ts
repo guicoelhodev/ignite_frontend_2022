@@ -6,7 +6,7 @@ export const Container = styled.div`
   height: 100%;
   max-width: 74rem;
   margin: 0 auto;
-  border: 1px solid red;
+  padding: 1rem;
 
   background-color: inherit;
 
