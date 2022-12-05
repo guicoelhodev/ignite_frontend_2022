@@ -44,7 +44,7 @@ button {
   }
 }
 
-:is(h1, h2){
+:is(h1, h2, h3){
   font-family: 'Baloo 2', cursive;
 };
 
