@@ -1,13 +1,4 @@
-import {
-  createContext,
-  Dispatch,
-  DispatchWithoutAction,
-  FC,
-  ReactNode,
-  SetStateAction,
-  useReducer,
-  useState,
-} from "react";
+import { createContext, FC, ReactNode, useReducer } from "react";
 import { coffeeReducer } from "../../reducers/coffeeReducer/reducer";
 
 export interface ICoffeeObject {
