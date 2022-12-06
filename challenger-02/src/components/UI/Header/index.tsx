@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import * as S from "./style";
 
 import Logo from "../../../assets/img/logo.png";
 import { Button } from "../Button";
 import { HiLocationMarker } from "react-icons/hi";
 import { ShopButton } from "../../FC/ShopButton";
+import { CoffeeContext } from "../../../context/coffeeContext";
+import { ModalCoffee } from "../../FC/ModalCoffee";
 
 export const Header: React.FC = () => {
+  const { showItemsModal } = useContext(CoffeeContext);
   return (
     <S.Container>
       <img
@@ -21,6 +24,8 @@ export const Header: React.FC = () => {
         </Button>
         <ShopButton />
       </section>
+
+      {showItemsModal && <ModalCoffee />}
     </S.Container>
   );
 };
