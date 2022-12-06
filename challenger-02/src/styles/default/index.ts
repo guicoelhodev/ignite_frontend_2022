@@ -22,4 +22,6 @@ export const defaultStyleTheme = {
 
   "font-baloo": "Baloo 2",
   "font-roboto": "Roboto",
+
+  "default-box-shadow": "0 2px 5px 1px rgba(0, 0, 0, 0.1)",
 } as const;

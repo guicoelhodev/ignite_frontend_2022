@@ -27,4 +27,9 @@ export const Container = styled.button<IButtonStyle>`
   svg {
     fill: ${({ theme, color }) => (color ? theme[color] : theme["base-text"])};
   }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
 `;
