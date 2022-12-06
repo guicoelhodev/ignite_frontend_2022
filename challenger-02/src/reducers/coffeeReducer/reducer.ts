@@ -22,7 +22,11 @@ export const coffeeReducer = (state: ICoffeeObject[] | [], action: IAction) => {
         return handleQuantityCoffee(state, currentCoffeeItem);
       }
     }
+    case ActionCoffee.REMOVE_COFFEE: {
+      state = state.filter((item) => item.name !== action.payload);
 
+      return state;
+    }
     default:
       return state;
   }
