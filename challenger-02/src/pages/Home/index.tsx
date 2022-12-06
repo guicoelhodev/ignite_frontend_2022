@@ -5,7 +5,6 @@ import HomeImage from "../../assets/img/home.png";
 import { Layout } from "../../components/UI/Layout";
 import { coffeeList as coffeeListData } from "../../data/coffeeList";
 import { CoffeeCard } from "../../components/FC/CoffeeCard";
-import { CoffeeContext, ICoffeeContext } from "../../context/coffeeContext";
 
 import { AiOutlineInbox, AiOutlineShoppingCart } from "react-icons/ai";
 import { BsFillStopwatchFill } from "react-icons/bs";
@@ -36,8 +35,6 @@ const listIcons = [
 ];
 
 export const Home: React.FC = () => {
-  const { coffeeList } = useContext(CoffeeContext) as ICoffeeContext;
-
   return (
     <Layout>
       <S.Container>
