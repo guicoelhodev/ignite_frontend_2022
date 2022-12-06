@@ -7,6 +7,7 @@ interface IButtonProps {
   color?: keyof typeof defaultStyleTheme;
   children: ReactNode;
   onClick?: any;
+  disabled?: boolean;
 }
 
 export const Button: React.FC<IButtonProps> = ({
@@ -14,9 +15,10 @@ export const Button: React.FC<IButtonProps> = ({
   children,
   color,
   onClick,
+  disabled,
 }) => {
   return (
-    <S.Container bg={bg} color={color} onClick={onClick}>
+    <S.Container bg={bg} color={color} onClick={onClick} disabled={disabled}>
       {children}
     </S.Container>
   );
