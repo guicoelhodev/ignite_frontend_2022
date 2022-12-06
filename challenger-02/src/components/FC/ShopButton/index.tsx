@@ -6,11 +6,15 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { CoffeeContext, ICoffeeContext } from "../../../context/coffeeContext";
 
 export const ShopButton: React.FC = () => {
-  const { coffeeList } = useContext(CoffeeContext) as ICoffeeContext;
+  const { coffeeList, setShowItemsModal } = useContext(CoffeeContext);
 
   return (
     <S.Container>
-      <Button bg="yellow-light" color="yellow-dark">
+      <Button
+        bg="yellow-light"
+        color="yellow-dark"
+        onClick={() => setShowItemsModal((prev) => !prev)}
+      >
         <AiOutlineShoppingCart />
       </Button>
 
