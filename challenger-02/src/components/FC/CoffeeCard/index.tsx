@@ -5,6 +5,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Button } from "../../UI/Button";
 import { CoffeeContext, ICoffeeContext } from "../../../context/coffeeContext";
 import { addNewCoffeAction } from "../../../reducers/coffeeReducer/actions";
+import { formatCoffeePrice } from "../../../utils/formatCofeePrice";
 
 interface ICoffeeCard {
   title: string;
@@ -20,11 +21,6 @@ export const CoffeeCard: React.FC<ICoffeeCard> = (props) => {
   ) as ICoffeeContext;
 
   const [quantityItem, setQuantityItem] = useState(0);
-  const formatCoffeePrice = (price: number) => {
-    let [integer, cents] = [Math.trunc(price / 100), price % 100];
-
-    return `${integer},${cents}`;
-  };
 
   const handleQuantity = (type: "add" | "remove") => {
     if (type === "add") {
@@ -62,12 +58,14 @@ export const CoffeeCard: React.FC<ICoffeeCard> = (props) => {
         <Button
           bg="purple-dark"
           color="white"
+          disabled={quantityItem === 0 ? true : false}
           onClick={() => {
             dispatchCoffeeList(
               addNewCoffeAction({
                 name: props.title,
                 quantity: quantityItem,
                 unity_price: props.unity_price,
+                image: props.image,
               })
             );
           }}
